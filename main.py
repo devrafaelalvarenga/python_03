@@ -88,7 +88,7 @@ if transacao['hora'] < 9 or transacao['hora'] > 18:
 # Exercício 6. Contagem de Palavras em Textos
 # Objetivo:** Dado um texto, contar quantas vezes cada palavra única aparece nele.
 
-texto = 'O Senhor tem muitos filhos muitos filhos ele tem'
+texto = 'Você atingirá o sucesso sucesso quando apresentar com orgulho as cicatrizes que adquiriu ao longo da sua jornada.'
 palavras = texto.split(' ')
 contagem_de_palavras = {}
 
@@ -108,7 +108,6 @@ for palavra in texto.split():
     # se existe a palavra na lista nao faz nada
     if palavra in lista_palavras:
         pass
-    # adiciona se nao existir
     else:
         lista_palavras.append(palavra)
 
