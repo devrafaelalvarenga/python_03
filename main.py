@@ -212,14 +212,14 @@ print(valor_total_venda_por_categoria)
 # Ler dados de entrada até que uma palavra-chave específica ("sair") seja fornecida.
 
 dados_usuario = input(
-    'Digite algum dado para ser guardado ou digite "SAIR" para abortar a operação: ')
+    'Digite algum dado para ser guardado ou digite "sair" para abortar a operação: ').lower()
 dados_armazenados = []
 
-while dados_usuario != 'SAIR':
+while dados_usuario != 'sair':
     dados_armazenados.append(dados_usuario)
     dados_usuario = input(
-        'Digite algum dado para ser guardado ou digite "SAIR" para abortar a operação: ')
-    if dados_usuario == 'SAIR':
+        'Digite algum dado para ser guardado ou digite "sair" para abortar a operação: ').lower()
+    if dados_usuario == 'sair':
         print('Operação abortada')
         print(f'Dados armazenados: {dados_armazenados}')
 
