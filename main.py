@@ -274,4 +274,4 @@ while i < len(itens):
         break
     print(f'Processando item {itens[i]}')
     i += 1
-#
+
