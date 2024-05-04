@@ -263,7 +263,7 @@ while tentativa <= tentativas_maximas:
 # Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
 
-itens = [1020,232,3.5,4,'parar', 'feijao', 'arroz', 'macarrao', 100]
+itens = [1020, 232, 3.5, 4, 'parar', 'feijao', 'arroz', 'macarrao', 100]
 valor_parada = 'parar'
 
 i = 0
