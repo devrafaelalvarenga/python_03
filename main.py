@@ -241,5 +241,36 @@ while numero_usuario in range(1, 101):
 # Exercício 14. Tentativas de Conexão
 # Simular tentativas de reconexão a um serviço com um limite máximo de tentativas.
 
+senha = '123321'
+tentativas_maximas = 5
+tentativa = 0
+
+while tentativa <= tentativas_maximas:
+    senha_conexao = input(
+        'Informe a senha para se conectar na rede "WIFI GRATIS": ')
+    if senha != senha_conexao:
+        tentativa += 1
+        print(f'Senha incorreta. Tentativa {
+              tentativa} de {tentativas_maximas}')
+        if tentativa == tentativas_maximas:
+            print('Conexão falhou')
+            exit()
+    elif senha == senha_conexao:
+        print('Conectado')
+        exit()
+
+
 # Exercício 15. Processamento de Dados com Condição de Parada
 # Processar itens de uma lista até encontrar um valor específico que indica a parada.
+
+itens = [1020,232,3.5,4,'parar', 'feijao', 'arroz', 'macarrao', 100]
+valor_parada = 'parar'
+
+i = 0
+
+while i < len(itens):
+    if itens[i] == 'parar':
+        print('Parada encontrada, encerrando processamento')
+        break
+    print(f'Processando item {itens[i]}')
+    i += 1
